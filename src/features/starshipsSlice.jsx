@@ -13,7 +13,8 @@ const starshipsSlice = createSlice({
     reducers: {
         setPage:(state,action) => {
             state.page = action.payload
-        }
+        },
+        
     },
     extraReducers: (builder) => {
         builder
@@ -23,7 +24,7 @@ const starshipsSlice = createSlice({
           .addMatcher(shipsApi.endpoints.getStarships.matchFulfilled, (state, action) => {
             state.loading = false;
             state.starships = action.payload.results;
-            state.totalPages = Math.ceil(action.payload.count / 10); // Calcula las páginas totales
+            state.totalPages = Math.ceil(action.payload.count / 10); 
           })
           .addMatcher(shipsApi.endpoints.getStarships.matchRejected, (state, action) => {
             state.loading = false;

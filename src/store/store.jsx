@@ -13,4 +13,4 @@ export const store = configureStore ({
         getDefaultMiddleware().concat(shipsApi.middleware),
 });
 
-//setupListeners(store.dispatch)
+setupListeners(store.dispatch)

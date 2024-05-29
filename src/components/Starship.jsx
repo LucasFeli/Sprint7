@@ -1,10 +1,13 @@
-import { useGetStarshipsQuery  } from "../api/shipsApi";
+import { useGetStarshipsQuery } from "../api/shipsApi";
 import { Pagination } from "./pagination/Pagination";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { Navbar } from "./navbar/Navbar";
+import { Navigation } from "./navigation/Navigation";
 
 export const Starship = () => {
   const { page } = useSelector((state) => state.starships);
-  const { data , isLoading, error } = useGetStarshipsQuery (page);
+  const { data, isLoading, error } = useGetStarshipsQuery(page);
 
   if (isLoading)
     return <div className="loading loading-spinner loading-lg">Loading...</div>;
@@ -12,18 +15,18 @@ export const Starship = () => {
 
   return (
     <>
-      {data.results.map((ships) => (
-        <div key={ships.name}>
-          <div className="soverflow-x-autotats shadow  ">
-            <div className="stat">
-              <h1 className="font-bold">{ships.name}</h1>
-              <h2>{ships.model}</h2>
-            </div>
+      <Navbar />
+      <Navigation />
+      {data.results.map((ships) => {
+        const id = ships.url.split("/")[5];
+        const imageUrl = `https://starwars-visualguide.com/assets/img/starships/${id}.jpg`;
+        return (
+          <div key={ships.name}>
+            <Link to={`/starships/${id}`}>{ships.name}</Link>
+            <img src={imageUrl} alt={ships.name} style={{ width: '100px', height: '100px' }} />
           </div>
-          
-        </div>
-        
-      ))}
+        );
+      })}
       <Pagination />
     </>
   );

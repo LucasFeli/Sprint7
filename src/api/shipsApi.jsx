@@ -6,8 +6,11 @@ export const shipsApi = createApi({
     endpoints: (builder) => ({
         getStarships: builder.query({
             query: (page = 1) => `/starships/?page=${page}`,
-        })
+        }),
+        getStarshipDetails: builder.query({
+            query: (id) => `/starships/${id}/`,
+          })
     })
 })
 
-export const {useGetStarshipsQuery } = shipsApi
+export const {useGetStarshipsQuery,useGetStarshipDetailsQuery } = shipsApi

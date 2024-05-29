@@ -1,5 +1,6 @@
 import StarWarslogo from "../../assets/StarWarslogo.png";
 
+
 export const Navbar = () => {
   return (
     <>
