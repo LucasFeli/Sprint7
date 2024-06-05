@@ -1,5 +1,5 @@
 import StarWarslogo from "../../assets/StarWarslogo.png";
-
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -11,8 +11,9 @@ export const Navbar = () => {
       </div>
       
       <div className="flex space-x-4">
-      <h2 className="hover:underline">LOGIN</h2>
-      <h2 className="hover:underline">SINGUP</h2>
+      <Link to={"/login"}><h2 className="hover:underline">LOGIN</h2></Link>
+      <Link to={"/register"}><h2 className="hover:underline">SINGUP</h2></Link>
+      
       </div>
       
       </div>
