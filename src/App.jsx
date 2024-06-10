@@ -1,4 +1,4 @@
-import { Starship } from "./components/Starship";
+import { Starship } from "./components/starship/Starship";
 import { Routes, Route } from "react-router-dom";
 import { IntroPage } from "./pages/introPage/IntroPage";
 import { StarshipDetails } from "./components/starshipDetails/StarshipDetails";

@@ -1,8 +1,8 @@
-import { useGetStarshipsQuery } from "../api/shipsApi";
-import { Pagination } from "./pagination/Pagination";
+import { useGetStarshipsQuery } from "../../api/shipsApi";
+import { Pagination } from "../pagination/Pagination";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import NotFound from "../assets/notFound.png";
+import NotFound from "../../assets/notFound.png";
 
 export const Starship = () => {
   const { page } = useSelector((state) => state.starships);
