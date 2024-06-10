@@ -78,7 +78,7 @@ npm start
 ## Estructura del Proyecto
 
 src/
-├── api/ # Configuración de la API
+├── api/ # Configuración de la API <br>
 │ └── shipsApi.jsx
 ├── assets/ # Imágenes y recursos estáticos
 ├── components/ # Componentes de React
