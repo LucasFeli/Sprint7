@@ -1,5 +1,5 @@
 import { useState } from 'react';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase/Firebase'
 import myDisney from "../../assets/Mydisney.png"
@@ -8,14 +8,14 @@ import footer from "../../assets/footer.png"
 export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      console.log('User logged in Successfully');
-      //navigate('/protected');
+      
+      navigate('/starships');
     } catch (error) {
       console.error('Error en el login', error);
     }
@@ -61,6 +61,7 @@ export const Login = () => {
             <p className='text-xs text-gray-600 font-bold mt-3'>Star Wars is part of The Walt Disney Family of Companies.</p>
             <p className='text-xs text-gray-700 mt-3 mb-2'>MyDisney lets you seamlessly log in to services and experiences across The Walt Disney Family of Companies, such as Disney+, ESPN, Walt Disney World, <a href="https://my.disney.com/" target="_blank" className='no-underline hover:underline text-black'>and more.</a></p>
             <img src={footer} alt="footer sponsors" style={{height:"30px", width:"400px"}} />
+            <Link to={"/register"}><h2 className='text-black'>Don't have an account?</h2></Link>
           </form>
         </div>
       </div>

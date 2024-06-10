@@ -5,21 +5,41 @@ import { StarshipDetails } from "./components/starshipDetails/StarshipDetails";
 import { Navbar } from "./components/navbar/Navbar";
 import { Navigation } from "./components/navigation/Navigation";
 import { Register } from "./components/register/Register";
+import { AuthProvider  } from "./context/AuthContext";
+import { PrivateRoute } from "./components/privateRoute/PrivateRoute";
 import { Login } from "./components/login/Login";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Navigation />
-      <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<IntroPage />} />
-        <Route path="/starships" element={<Starship />} exact />
-        <Route path="/starships/:id" element={<StarshipDetails />} />
-      </Routes>
+      <AuthProvider >
+        <Navbar />
+        <Navigation />
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<IntroPage />} />
+
+          <Route
+            path="/starships"
+            element={
+              <PrivateRoute>
+                <Starship />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="starships/:id"
+            element={
+              <PrivateRoute>
+                <StarshipDetails /> 
+              </PrivateRoute>
+            }
+          />
+         
+        </Routes>
+      </AuthProvider >
     </>
   );
 }

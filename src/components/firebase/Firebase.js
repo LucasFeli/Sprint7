@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID
+  apiKey: "AIzaSyDr_4g1Y5D4pQdQOSDxGYkJncL4iMqD1A8",
+  authDomain: "autenticacion-starwars.firebaseapp.com",
+  projectId: "autenticacion-starwars",
+  storageBucket: "autenticacion-starwars.appspot.com",
+  messagingSenderId: "342789073154",
+  appId: "1:342789073154:web:1104641e57bcad31c5fa1b"
 };
 
 // Initialize Firebase
