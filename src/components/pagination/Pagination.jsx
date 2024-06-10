@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../features/starshipsSlice";
 
 
-{/*Ejercicio #3 Pagination*/}
+{/*Ejercicio #3 Pagination not infiteloop*/}
 export const Pagination = () => {
   const dispatch = useDispatch();
   const { page, totalPages } = useSelector((state) => state.starships);
