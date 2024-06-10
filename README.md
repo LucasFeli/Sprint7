@@ -78,46 +78,38 @@ npm start
 ## Estructura del Proyecto
 
 src/
-│
-├── api/
-│   ├──shipsApi.jsx             # Configuracion de la API
-├── assets/                     # Imágenes y recursos estáticos
-│   
-├── components/                 # Componentes de React
-│   ├── Firebase.js
-│   ├── Login.jsx
-│   ├── Navbar.jsx
-│   ├── Navigation.jsx
-│   ├── Pagination.jsx
-│   ├── PrivateRoute.jsx
-│   ├── Register.jsx
-│   ├── Starship.jsx
-│   ├── StarshipDetails.jsx
-│   
-├── context/                    # Contextos de React
-│   └── AuthContext.js
-│
-├── features/                   # Configuración de Redux slices
-│   └── startshipsSlice.jsx
-│
-├── pages/                      # Configuración de paginas de la aplicacion                
-│   ├── IntroPage/
-│       ├── IntroPage.jsx                
-│   ├── movies/
-│       ├── Movies.jsx
-│   ├── pilots/ 
-│       ├── Pilots.jsx
-│   ├── startships/
-│        ├── StartshipsView.jsx                   
-│   
-├── store/                      # Configuración de Redux
-│   └── store.js
-│
-├── App.css                     # Estilos
-├── App.jsx                     # Componente principal de la aplicación
-├── index.css                   # Estilos globales
-├── index.js                    # Punto de entrada de React
-└── ...
+├── api/ # Configuración de la API
+│ └── shipsApi.jsx
+├── assets/ # Imágenes y recursos estáticos
+├── components/ # Componentes de React
+│ ├── Firebase.js
+│ ├── Login.jsx
+│ ├── Navbar.jsx
+│ ├── Navigation.jsx
+│ ├── Pagination.jsx
+│ ├── PrivateRoute.jsx
+│ ├── Register.jsx
+│ ├── Starship.jsx
+│ └── StarshipDetails.jsx
+├── context/ # Contextos de React
+│ └── AuthContext.js
+├── features/ # Configuración de Redux slices
+│ └── starshipsSlice.jsx
+├── pages/ # Configuración de páginas de la aplicación
+│ ├── IntroPage/
+│ │ └── IntroPage.jsx
+│ ├── movies/
+│ │ └── Movies.jsx
+│ ├── pilots/
+│ │ └── Pilots.jsx
+│ └── starships/
+│ └── StarshipsView.jsx
+├── store/ # Configuración de Redux
+│ └── store.js
+├── App.css # Estilos
+├── App.jsx # Componente principal de la aplicación
+├── index.css # Estilos globales
+└── index.js # Punto de entrada de React
 
 # Rutas
 
