@@ -26,8 +26,8 @@ const Pilot = ({ id }) => {
 
   return (
 
-    <li>
-      <img
+    <div className="card lg:card-side bg-base-100 shadow-xl ">
+        <img
         src={imageUrl}
         alt={data.name}
         style={{ width: '200px', height: '300px' }}
@@ -38,7 +38,9 @@ const Pilot = ({ id }) => {
       />
       <p className="card-title">{data.name}</p>
       <p>{data.gender}</p>
-    </li>
+    </div>
+      
+
   );
 };
 

@@ -11,10 +11,17 @@ export const shipsApi = createApi({
       query: (id) => `/starships/${id}/`,
     }),
     getPilotDetails: builder.query({
-        query: (id) => `/people/${id}/`,
-      }),
-    
+      query: (id) => `/people/${id}/`,
+    }),
+    getFilmDetails: builder.query({
+      query: (id) => `films/${id}/`,
+    }),
   }),
 });
 
-export const { useGetStarshipsQuery, useGetStarshipDetailsQuery,useGetPilotDetailsQuery } = shipsApi;
+export const {
+  useGetStarshipsQuery,
+  useGetStarshipDetailsQuery,
+  useGetPilotDetailsQuery,
+  useGetFilmDetailsQuery,
+} = shipsApi;
