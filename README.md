@@ -122,13 +122,18 @@ src/<br>
 
 - Pagina de introduccion
 
-![alt text](image.png)
+![alt text](src/assets/Capturas_Readme/image.png)
 
+- Formulario de Registro
 ![alt Formulario de Registro](src/assets/Capturas_Readme/image-1.png)
 
+- Formulario de Inicio de sesion
 ![alt Formulario de Inicio de sesion](src/assets/Capturas_Readme/image_Login.png)
 
+- Pagina de exploracion de naves espaciales
 ![alt Pagina de exploracion de naves espaciales](src/assets/Capturas_Readme/image-3.png)
+
+- Pagina de detalles de una nave espacial específica
 
 ![alt Pagina de detalles de una nave espacial específica](src/assets/Capturas_Readme/image-5.png)
 
