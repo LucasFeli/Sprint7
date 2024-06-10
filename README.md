@@ -122,7 +122,7 @@ src/<br>
 
 - Pagina de introduccion
 
-![alt text](image.png)
+![alt pagina de introduccion](src/assets/Capturas_Readme/image.png)
 
 - Pagina de registro
 
