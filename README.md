@@ -115,12 +115,14 @@ src/<br>
 
 
 "/" - Página de introducción
-"/register "- Página de registro de usuario <br>
-"/login" - Página de inicio de sesión de usuario <br>
-"/starships" - Página de exploración de naves espaciales (ruta protegida) <br>
-"/starships/:id "- Página de detalles de una nave espacial específica (ruta protegida) <br>
+"/register "- Página de registro de usuario
+"/login" - Página de inicio de sesión de usuario
+"/starships" - Página de exploración de naves espaciales (ruta protegida)
+"/starships/:id "- Página de detalles de una nave espacial específica (ruta protegida)
 
-![alt pagina de introduccion](src/assets/Capturas_Readme/image.png)
+- Pagina de introduccion
+
+![alt text](image.png)
 
 ![alt Formulario de Registro](src/assets/Capturas_Readme/image-1.png)
 
