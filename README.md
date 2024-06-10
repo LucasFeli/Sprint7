@@ -77,75 +77,58 @@ npm start
 
 ## Estructura del Proyecto
 
-src/
-│
-├── api/
-│   ├──shipsApi.jsx             # Configuracion de la API
-├── assets/                     # Imágenes y recursos estáticos
-│   
-├── components/                 # Componentes de React
-│   ├── Firebase.js
-│   ├── Login.jsx
-│   ├── Navbar.jsx
-│   ├── Navigation.jsx
-│   ├── Pagination.jsx
-│   ├── PrivateRoute.jsx
-│   ├── Register.jsx
-│   ├── Starship.jsx
-│   ├── StarshipDetails.jsx
-│   
-├── context/                    # Contextos de React
-│   └── AuthContext.js
-│
-├── features/                   # Configuración de Redux slices
-│   └── startshipsSlice.jsx
-│
-├── pages/                      # Configuración de paginas de la aplicacion                
-│   ├── IntroPage/
-│       ├── IntroPage.jsx                
-│   ├── movies/
-│       ├── Movies.jsx
-│   ├── pilots/ 
-│       ├── Pilots.jsx
-│   ├── startships/
-│        ├── StartshipsView.jsx                   
-│   
-├── store/                      # Configuración de Redux
-│   └── store.js
-│
-├── App.css                     # Estilos
-├── App.jsx                     # Componente principal de la aplicación
-├── index.css                   # Estilos globales
-├── index.js                    # Punto de entrada de React
-└── ...
+src/<br>
+├── api/ # Configuración de la API <br>
+│ └── shipsApi.jsx<br>
+├── assets/ # Imágenes y recursos estáticos<br>
+├── components/ # Componentes de React<br>
+│ ├── Firebase.js <br>
+│ ├── Login.jsx <br>
+│ ├── Navbar.jsx <br>
+│ ├── Navigation.jsx <br>
+│ ├── Pagination.jsx <br>
+│ ├── PrivateRoute.jsx <br>
+│ ├── Register.jsx <br>
+│ ├── Starship.jsx <br>
+│ └── StarshipDetails.jsx <br>
+├── context/ # Contextos de React <br>
+│ └── AuthContext.js <br>
+├── features/ # Configuración de Redux slices <br>
+│ └── starshipsSlice.jsx <br>
+├── pages/ # Configuración de páginas de la aplicación <br>
+│ ├── IntroPage/ <br>
+│ │ └── IntroPage.jsx <br>
+│ ├── movies/ <br>
+│ │ └── Movies.jsx <br>
+│ ├── pilots/ <br>
+│ │ └── Pilots.jsx <br>
+│ └── starships/ <br>
+│ └── StarshipsView.jsx <br>
+├── store/ # Configuración de Redux <br>
+│ └── store.js <br>
+├── App.css # Estilos <br>
+├── App.jsx # Componente principal de la aplicación <br>
+├── index.css # Estilos globales <br>
+└── index.js # Punto de entrada de React <br>
 
 # Rutas
 
 
 "/" - Página de introducción
-"/register "- Página de registro de usuario
-"/login" - Página de inicio de sesión de usuario
-"/starships" - Página de exploración de naves espaciales (ruta protegida)
-"/starships/:id "- Página de detalles de una nave espacial específica (ruta protegida)
+"/register "- Página de registro de usuario <br>
+"/login" - Página de inicio de sesión de usuario <br>
+"/starships" - Página de exploración de naves espaciales (ruta protegida) <br>
+"/starships/:id "- Página de detalles de una nave espacial específica (ruta protegida) <br>
 
-- Pagina de introduccion
+![alt pagina de introduccion](src/assets/Capturas_Readme/image.png)
 
-![alt text](image.png)
+![alt Formulario de Registro](src/assets/Capturas_Readme/image-1.png)
 
-- Pagina de registro
+![alt Formulario de Inicio de sesion](src/assets/Capturas_Readme/image_Login.png)
 
-![alt text](image-1.png)
+![alt Pagina de exploracion de naves espaciales](src/assets/Capturas_Readme/image-3.png)
 
-- Pagina de Inicio de sesion
-
-![alt text](image-2.png)
-
-- Pagina de exploracion de naves espaciales
-
-![alt text](image-3.png)
-
-- Pagina de detalles de una nave espacial específica
-    ![alt text](image-5.png)
+![alt Pagina de detalles de una nave espacial específica](src/assets/Capturas_Readme/image-5.png)
 
 # Contribución
 
