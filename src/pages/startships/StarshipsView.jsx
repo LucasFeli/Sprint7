@@ -7,11 +7,11 @@ export const StarshipsView = ({ data }) => {
     data.url.split("/")[5]
   }.jpg`;
   return (
-    
+    <>
+    <div className="bg-black border-2 border-white-200 text-white flex justify-center space-x-8 p-2 mt-3">Starships</div>
     <div className="card lg:card-side bg-base-100 shadow-xl">
-      <div className="bg-black border-2 border-white-200 text-white flex justify-center space-x-8 p-2 mt-3">Starships</div>
-
-      <figure>
+      
+     <div className="card-body">.<figure>
         <img
           src={imageUrl}
           alt={data.name}
@@ -22,7 +22,6 @@ export const StarshipsView = ({ data }) => {
           }}
         />
       </figure>
-      <div className="card-body">
         <h2 className="card-title">{data.name}</h2>
         <p>Model: {data.model}</p>
         <p>Manufacturer: {data.manufacturer}</p>
@@ -46,5 +45,8 @@ export const StarshipsView = ({ data }) => {
         </div>
       </div>
     </div>
+    
+    </>
+    
   );
 };

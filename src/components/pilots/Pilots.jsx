@@ -37,7 +37,7 @@ const Pilot = ({ id }) => {
         }}
       />
       <p className="card-title">{data.name}</p>
-      <p>{data.gender}</p>
+      
     </div>
       
 

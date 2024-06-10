@@ -24,15 +24,15 @@ export const Pagination = () => {
   return (
     <div className="flex justify-center space-x-4 p-4">
       <button
-        className="bg-gray-300 p-2 rounded disabled:opacity-50"
+        className="bg-black p-3 rounded disabled:opacity-50"
         onClick={handlePrevious}
         disabled={page === 1}
       >
         Previous
       </button>
-      <span className="text-xl">{page}</span>
+      <span className="  bg-black font-bold text-4xl">{page}</span>
       <button
-        className="bg-gray-300 p-2 rounded disabled:opacity-50"
+        className="bg-black p-2 rounded disabled:opacity-50"
         onClick={handleNext}
         disabled={page === totalPages}
       >

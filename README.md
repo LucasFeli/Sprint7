@@ -78,30 +78,31 @@ npm start
 ## Estructura del Proyecto
 
 src/<br>
-├── api/ # Configuración de la API <br>
+├── api/                                              # Configuración de la API <br>
 │ └── shipsApi.jsx<br>
-├── assets/ # Imágenes y recursos estáticos<br>
-├── components/ # Componentes de React<br>
+├── assets/                                           # Imágenes y recursos estáticos<br>
+├── components/                                       # Componentes de React<br>
 │ ├── Firebase.js <br>
 │ ├── Login.jsx <br>
+│ ├── Movies.jsx <br>
 │ ├── Navbar.jsx <br>
 │ ├── Navigation.jsx <br>
 │ ├── Pagination.jsx <br>
+│ ├── Pilots.jsx <br>
 │ ├── PrivateRoute.jsx <br>
 │ ├── Register.jsx <br>
 │ ├── Starship.jsx <br>
 │ └── StarshipDetails.jsx <br>
-├── context/ # Contextos de React <br>
+├── context/                                        # Contextos de React <br>
 │ └── AuthContext.js <br>
 ├── features/ # Configuración de Redux slices <br>
 │ └── starshipsSlice.jsx <br>
-├── pages/ # Configuración de páginas de la aplicación <br>
+├── pages/                                         # Configuración de páginas de la aplicación <br>
 │ ├── IntroPage/ <br>
 │ │ └── IntroPage.jsx <br>
-│ ├── movies/ <br>
-│ │ └── Movies.jsx <br>
-│ ├── pilots/ <br>
-│ │ └── Pilots.jsx <br>
+│ 
+│ 
+│ │ └──  <br>
 │ └── starships/ <br>
 │ └── StarshipsView.jsx <br>
 ├── store/ # Configuración de Redux <br>
@@ -114,11 +115,11 @@ src/<br>
 # Rutas
 
 
-"/" - Página de introducción
-"/register "- Página de registro de usuario
-"/login" - Página de inicio de sesión de usuario
-"/starships" - Página de exploración de naves espaciales (ruta protegida)
-"/starships/:id "- Página de detalles de una nave espacial específica (ruta protegida)
+"/" - Página de introducción <br>
+"/register "- Página de registro de usuario <br>
+"/login" - Página de inicio de sesión de usuario <br>
+"/starships" - Página de exploración de naves espaciales (ruta protegida) <br>
+"/starships/:id "- Página de detalles de una nave espacial específica (ruta protegida)<br>
 
 - Pagina de introduccion
 
@@ -136,6 +137,10 @@ src/<br>
 - Pagina de detalles de una nave espacial específica
 
 ![alt Pagina de detalles de una nave espacial específica](src/assets/Capturas_Readme/image-5.png)
+
+- Pagina de detalles de una nave espacial específica , con sus pilotos y peliculas donde aparecen.
+
+![Pagina de detalles de una nave espacial específica , con sus pilotos y peliculas donde aparecen text](src/assets/Capturas_Readme/image_4.png)
 
 # Contribución
 
