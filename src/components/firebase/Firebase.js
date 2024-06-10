@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "AIzaSyDr_4g1Y5D4pQdQOSDxGYkJncL4iMqD1A8",
   authDomain: "autenticacion-starwars.firebaseapp.com",
   projectId: "autenticacion-starwars",
   storageBucket: "autenticacion-starwars.appspot.com",
