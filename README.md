@@ -77,39 +77,39 @@ npm start
 
 ## Estructura del Proyecto
 
-src/
+src/<br>
 ├── api/ # Configuración de la API <br>
-│ └── shipsApi.jsx
-├── assets/ # Imágenes y recursos estáticos
-├── components/ # Componentes de React
-│ ├── Firebase.js
-│ ├── Login.jsx
-│ ├── Navbar.jsx
-│ ├── Navigation.jsx
-│ ├── Pagination.jsx
-│ ├── PrivateRoute.jsx
-│ ├── Register.jsx
-│ ├── Starship.jsx
-│ └── StarshipDetails.jsx
-├── context/ # Contextos de React
-│ └── AuthContext.js
-├── features/ # Configuración de Redux slices
-│ └── starshipsSlice.jsx
-├── pages/ # Configuración de páginas de la aplicación
-│ ├── IntroPage/
-│ │ └── IntroPage.jsx
-│ ├── movies/
-│ │ └── Movies.jsx
-│ ├── pilots/
-│ │ └── Pilots.jsx
-│ └── starships/
-│ └── StarshipsView.jsx
-├── store/ # Configuración de Redux
-│ └── store.js
-├── App.css # Estilos
-├── App.jsx # Componente principal de la aplicación
-├── index.css # Estilos globales
-└── index.js # Punto de entrada de React
+│ └── shipsApi.jsx<br>
+├── assets/ # Imágenes y recursos estáticos<br>
+├── components/ # Componentes de React<br>
+│ ├── Firebase.js <br>
+│ ├── Login.jsx <br>
+│ ├── Navbar.jsx <br>
+│ ├── Navigation.jsx <br>
+│ ├── Pagination.jsx <br>
+│ ├── PrivateRoute.jsx <br>
+│ ├── Register.jsx <br>
+│ ├── Starship.jsx <br>
+│ └── StarshipDetails.jsx <br>
+├── context/ # Contextos de React <br>
+│ └── AuthContext.js <br>
+├── features/ # Configuración de Redux slices <br>
+│ └── starshipsSlice.jsx <br>
+├── pages/ # Configuración de páginas de la aplicación <br>
+│ ├── IntroPage/ <br>
+│ │ └── IntroPage.jsx <br>
+│ ├── movies/ <br>
+│ │ └── Movies.jsx <br>
+│ ├── pilots/ <br>
+│ │ └── Pilots.jsx <br>
+│ └── starships/ <br>
+│ └── StarshipsView.jsx <br>
+├── store/ # Configuración de Redux <br>
+│ └── store.js <br>
+├── App.css # Estilos <br>
+├── App.jsx # Componente principal de la aplicación <br>
+├── index.css # Estilos globales <br>
+└── index.js # Punto de entrada de React <br>
 
 # Rutas
 
