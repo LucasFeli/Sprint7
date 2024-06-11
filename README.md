@@ -93,19 +93,17 @@ src/<br>
 │ ├── Register.jsx <br>
 │ ├── Starship.jsx <br>
 │ └── StarshipDetails.jsx <br>
+│      └── StarshipDetails.test.js <br>
 ├── context/                                        # Contextos de React <br>
 │ └── AuthContext.js <br>
-├── features/ # Configuración de Redux slices <br>
+├── features/                                       # Configuración de Redux slices <br>
 │ └── starshipsSlice.jsx <br>
 ├── pages/                                         # Configuración de páginas de la aplicación <br>
 │ ├── IntroPage/ <br>
 │ │ └── IntroPage.jsx <br>
-│ 
-│ 
-│ │ └──  <br>
-│ └── starships/ <br>
+│ │── starships/ <br>
 │ └── StarshipsView.jsx <br>
-├── store/ # Configuración de Redux <br>
+├── store/                                       # Configuración de Redux <br>
 │ └── store.js <br>
 ├── App.css # Estilos <br>
 ├── App.jsx # Componente principal de la aplicación <br>

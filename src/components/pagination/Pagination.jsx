@@ -1,20 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setPage } from "../../features/starshipsSlice";
 
-
-{/*Ejercicio #3 Pagination not infiteloop*/}
+{
+  /*Ejercicio #3 Pagination not infiteloop*/
+}
 export const Pagination = () => {
   const dispatch = useDispatch();
   const { page, totalPages } = useSelector((state) => state.starships);
- 
+
   const handlePrevious = () => {
     if (page > 1) {
       dispatch(setPage(page - 1));
-      
     }
   };
-
-  
 
   const handleNext = () => {
     if (page < totalPages) {
@@ -38,9 +36,6 @@ export const Pagination = () => {
       >
         Next
       </button>
-      
     </div>
-  )
+  );
 };
-
- 

@@ -1,12 +1,11 @@
-import React from 'react';
-import { useGetFilmDetailsQuery } from '../../api/shipsApi';
-import NotFound from '../../assets/notFound.png';
+import { useGetFilmDetailsQuery } from "../../api/shipsApi";
+import NotFound from "../../assets/notFound.png";
 
 export const Movies = ({ urls }) => {
   return (
     <>
       {urls.map((url) => {
-        const id = url.split('/')[5]; // Extraer el ID de la URL
+        const id = url.split("/")[5];
         return <Movie key={id} id={id} />;
       })}
     </>
@@ -16,7 +15,8 @@ export const Movies = ({ urls }) => {
 const Movie = ({ id }) => {
   const { data, error, isLoading } = useGetFilmDetailsQuery(id);
 
-  if (isLoading) return <div className="loading loading-spinner loading-sm">Loading...</div>;
+  if (isLoading)
+    return <div className="loading loading-spinner loading-sm">Loading...</div>;
   if (error) return <div>Error loading movie</div>;
 
   const imageUrl = `https://starwars-visualguide.com/assets/img/films/${id}.jpg`;
@@ -27,7 +27,7 @@ const Movie = ({ id }) => {
         <img
           src={imageUrl}
           alt={data.title}
-          style={{ width: '200px', height: '300px' }}
+          style={{ width: "200px", height: "300px" }}
           className="w-full h-64 object-cover"
           onError={(e) => {
             e.target.onerror = null;
@@ -42,5 +42,3 @@ const Movie = ({ id }) => {
     </div>
   );
 };
-
-
