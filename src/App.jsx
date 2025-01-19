@@ -23,17 +23,17 @@ function App() {
           <Route
             path="/starships"
             element={
-              <PrivateRoute>
+              
                 <Starship />
-              </PrivateRoute>
+              
             }
           />
           <Route
             path="starships/:id"
             element={
-              <PrivateRoute>
+              
                 <StarshipDetails />
-              </PrivateRoute>
+              
             }
           />
         </Routes>
