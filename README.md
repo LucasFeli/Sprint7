@@ -70,7 +70,7 @@ export default app;
 Para iniciar la aplicación en modo de desarrollo:
 
 ```sh
-npm start
+npm run dev
 ```
 
 - La aplicación estará disponible en http://localhost:5173.
